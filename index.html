@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favoritos para Garotas | Grupo VIP de Achadinhos</title>
+<meta name="description" content="Entre no grupo Favoritos para Garotas e receba todos os dias achadinhos de moda, beleza e acessórios antes de todo mundo.">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '967595109678682');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=967595109678682&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --accent:#d98fa3;
+    --accent-light:#f7e2e7;
+    --bg:#faf5ec;
+    --card:#ffffff;
+    --text:#2b2022;
+    --text-muted:#8a7b7c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+  }
+  a{text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  .page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:28px 16px;
+  }
+
+  .card{
+    width:100%;
+    max-width:440px;
+    background:var(--card);
+    border-radius:28px;
+    box-shadow:0 20px 50px rgba(60,40,40,.08);
+    padding:36px 26px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:var(--accent);
+    color:#fff;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.4px;
+    text-transform:uppercase;
+    padding:9px 18px;
+    border-radius:14px;
+  }
+
+  h1{
+    font-family:'Fredoka',sans-serif;
+    font-weight:700;
+    font-size:32px;
+    line-height:1.2;
+    color:var(--accent);
+    margin-top:20px;
+  }
+
+  .tagline{
+    margin-top:12px;
+    font-size:15px;
+    color:var(--text-muted);
+    line-height:1.55;
+    max-width:340px;
+  }
+
+  .lock-note{
+    margin-top:10px;
+    font-size:12px;
+    color:var(--text-muted);
+  }
+
+  .avatars{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+    font-size:12.5px;
+    color:var(--text-muted);
+  }
+  .avatars .stack{display:flex;}
+  .avatars .stack span{
+    width:26px;height:26px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),#c99aa3);
+    border:2px solid var(--card);
+    margin-left:-9px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;font-weight:700;color:#fff;
+  }
+  .avatars .stack span:first-child{margin-left:0;}
+
+  /* CTA */
+  .cta-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    margin-top:26px;
+    background:linear-gradient(90deg,#25D366,#1fb955);
+    color:#fff;
+    font-weight:700;
+    font-size:16.5px;
+    padding:17px 18px;
+    border-radius:50px;
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+    animation:pulse 2.2s infinite;
+    transition:transform .15s ease;
+  }
+  .cta-btn:active{transform:scale(.97);}
+  .cta-btn svg{width:22px;height:22px;flex-shrink:0;}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.5);}
+    70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+  }
+  .microcopy{
+    font-size:12px;
+    color:var(--text-muted);
+    margin-top:10px;
+  }
+
+  /* URGENCY / SCARCITY CARD */
+  .urgency-card{
+    width:100%;
+    background:var(--accent-light);
+    border-radius:16px;
+    padding:14px 16px;
+    margin-top:24px;
+  }
+  .urgency-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    font-size:13px;
+    font-weight:600;
+    color:var(--text);
+  }
+  .urgency-row b{color:var(--text);font-size:14px;}
+  .progress-track{
+    width:100%;
+    height:8px;
+    background:rgba(168,112,124,.18);
+    border-radius:10px;
+    margin-top:8px;
+    overflow:hidden;
+  }
+  .progress-fill{
+    height:100%;
+    border-radius:10px;
+    background:var(--accent);
+    width:32%;
+    transition:width .6s ease;
+  }
+  .urgency-sub{
+    margin-top:8px;
+    font-size:12.5px;
+    color:var(--text-muted);
+  }
+  .urgency-sub b{color:var(--text);}
+
+  .chips{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    margin-top:22px;
+  }
+  .chip{
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--text);
+    background:var(--accent-light);
+    padding:7px 14px;
+    border-radius:30px;
+  }
+
+  .fallback-note{
+    margin-top:22px;
+    font-size:12px;
+    color:var(--text-muted);
+    line-height:1.6;
+  }
+  .fallback-note a{
+    color:var(--accent);
+    font-weight:600;
+  }
+
+  footer{
+    text-align:center;
+    padding:22px 22px 10px;
+    color:#b5a9a3;
+    font-size:11px;
+  }
+
+  /* JOIN NOTIFICATION POPUP */
+  .notify-popup{
+    position:fixed;
+    left:16px;
+    right:16px;
+    bottom:16px;
+    max-width:400px;
+    margin:0 auto;
+    background:var(--accent);
+    color:#fff;
+    border-radius:20px;
+    padding:16px 22px;
+    text-align:center;
+    font-size:13.5px;
+    font-weight:600;
+    line-height:1.4;
+    box-shadow:0 14px 34px rgba(60,30,35,.25);
+    z-index:95;
+    transform:translateY(130%);
+    opacity:0;
+    transition:transform .45s cubic-bezier(.34,1.56,.64,1), opacity .35s ease;
+    pointer-events:none;
+  }
+  .notify-popup.show{
+    transform:translateY(0);
+    opacity:1;
+    pointer-events:auto;
+  }
+  .notify-popup .np-close{
+    position:absolute;
+    top:8px;
+    right:12px;
+    background:none;
+    border:none;
+    color:rgba(255,255,255,.8);
+    font-size:14px;
+    line-height:1;
+    cursor:pointer;
+    padding:4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="card">
+    <span class="badge">🔥 Últimas vagas disponíveis</span>
+
+    <h1>Favoritos para Garotas</h1>
+    <p class="tagline">O grupo de WhatsApp com os melhores <b>achadinhos</b> de moda, beleza e acessórios — todo dia, antes de esgotar.</p>
+    <p class="lock-note">🔒 Grupo exclusivo feminino</p>
+
+    <div class="avatars">
+      <div class="stack">
+        <span>M</span><span>J</span><span>A</span><span>C</span>
+      </div>
+      <span>+2.400 mulheres já estão dentro</span>
+    </div>
+
+    <a href="https://chat.whatsapp.com/JeD3tU1pwpP9q0o1bUHcgs?s=cl&p=i&mlu=4" class="cta-btn" id="waCta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.48 1.32 4.99L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.876 9.876 0 0012.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.19 8.19 0 012.41 5.82c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.4-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 01-1.26-4.38c.01-4.54 3.7-8.23 8.25-8.23m-4.3 4.72c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.36 1 2.53.13.16 1.72 2.7 4.24 3.7 2.1.83 2.53.67 2.98.62.46-.04 1.47-.6 1.68-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.16-.48-.29-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.17.25-.64.81-.79 .98-.14.16-.29.18-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.44-.06-.13-.56-1.36-.78-1.86-.2-.48-.4-.42-.56-.43h-.24z"/></svg>
+      QUERO ENTRAR NO GRUPO
+    </a>
+    <p class="microcopy">100% gratuito · Saia quando quiser · Sem spam · Cupons exclusivos</p>
+
+    <div class="urgency-card">
+      <div class="urgency-row">
+        <span>Vagas preenchidas</span>
+        <b id="vagasPct">33%</b>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <p class="urgency-sub">Restam apenas <b id="vagasCount">27</b> vagas hoje</p>
+    </div>
+
+    <div class="chips">
+      <span class="chip">👗 Moda</span>
+      <span class="chip">💄 Beleza</span>
+      <span class="chip">👜 Acessórios</span>
+      <span class="chip">✨ Skincare</span>
+    </div>
+
+    <p class="fallback-note">
+      Não conseguiu entrar no grupo? Fale comigo no <a href="https://wa.me/5561995631448?text=Oi%21%20Estava%20tentando%20entrar%20no%20grupo%20mas%20n%C3%A3o%20consegui%20%F0%9F%98%95" target="_blank" rel="noopener">WhatsApp</a> ou <a href="https://ig.me/m/favoritosparagarotas" target="_blank" rel="noopener">Instagram</a>
+    </p>
+  </div>
+
+  <footer>
+    Favoritos para Garotas — grupo independente de ofertas. Não representa nenhuma loja específica.<br>
+    © 2026 Todos os direitos reservados.
+  </footer>
+</div>
+
+<!-- Join notification popup -->
+<div class="notify-popup" id="notifyPopup">
+  <button class="np-close" id="npClose" aria-label="Fechar aviso">✕</button>
+  <span id="npText">Joana de São Paulo acabou de entrar no grupo</span>
+</div>
+
+<script>
+(function(){
+  var waCta = document.getElementById('waCta');
+  waCta.addEventListener('click', function(){
+    if (typeof fbq === 'function') fbq('track', 'Lead');
+  });
+})();
+
+(function(){
+  var names = ["Joana","Maria","Camila","Fernanda","Juliana","Patrícia","Aline","Bruna","Larissa","Vanessa","Débora","Renata","Priscila","Tatiane","Gabriela","Carla","Simone","Roberta","Amanda","Letícia"];
+  var cities = ["São Paulo","Rio de Janeiro","Belo Horizonte","Curitiba","Salvador","Fortaleza","Recife","Porto Alegre","Brasília","Campinas","Goiânia","Manaus"];
+
+  var popup = document.getElementById('notifyPopup');
+  var textEl = document.getElementById('npText');
+  var closeBtn = document.getElementById('npClose');
+
+  var vagasTotal = 40;
+  var vagasFloor = 4;
+  var vagasLeft = 27;
+  var vagasCountEl = document.getElementById('vagasCount');
+  var vagasPctEl = document.getElementById('vagasPct');
+  var progressFillEl = document.getElementById('progressFill');
+
+  function updateVagasUI(){
+    vagasCountEl.textContent = vagasLeft;
+    var pctFilled = Math.round((1 - vagasLeft / vagasTotal) * 100);
+    vagasPctEl.textContent = pctFilled + '%';
+    progressFillEl.style.width = pctFilled + '%';
+  }
+
+  function decrementVagas(){
+    if (vagasLeft > vagasFloor){
+      vagasLeft -= 1;
+      updateVagasUI();
+    }
+  }
+
+  var stopped = false;
+  var lastName = null;
+  var hideTimer = null;
+  var loopTimer = null;
+
+  function pick(arr, exclude){
+    var v;
+    do { v = arr[Math.floor(Math.random() * arr.length)]; } while (arr.length > 1 && v === exclude);
+    return v;
+  }
+
+  function showNotification(){
+    if (stopped) return;
+    var name = pick(names, lastName);
+    lastName = name;
+    var city = pick(cities);
+
+    textEl.textContent = name + ' de ' + city + ' acabou de entrar no grupo';
+
+    popup.classList.add('show');
+    decrementVagas();
+
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function(){
+      popup.classList.remove('show');
+    }, 4800);
+  }
+
+  function scheduleNext(){
+    if (stopped) return;
+    var delay = 7000 + Math.random() * 7000;
+    loopTimer = setTimeout(function(){
+      showNotification();
+      scheduleNext();
+    }, delay);
+  }
+
+  closeBtn.addEventListener('click', function(){
+    stopped = true;
+    popup.classList.remove('show');
+    clearTimeout(hideTimer);
+    clearTimeout(loopTimer);
+  });
+
+  setTimeout(function(){
+    showNotification();
+    scheduleNext();
+  }, 3000);
+})();
+</script>
+
+</body>
+</html>
